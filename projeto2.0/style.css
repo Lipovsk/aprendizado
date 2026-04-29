@@ -921,3 +921,36 @@ transition:.3s;
 .account-btn:hover{
 background:var(--accent);
 }
+
+
+
+/* Mensagens de auth */
+.auth-msg {
+  font-size: 13px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  margin: 8px 0;
+  display: none;
+}
+.auth-msg.error   { background: #fef2f2; color: #b91c1c; border: 1px solid #fecaca; }
+.auth-msg.success { background: #f0fdf4; color: #15803d; border: 1px solid #bbf7d0; }
+
+.auth-link { text-align: center; margin-top: 12px; font-size: 13px; }
+.auth-link a { color: #555; text-decoration: underline; }
+
+
+#resendBtn:hover {
+  background: #f8f8f8 !important;
+}
+
+.auth-link {
+  text-align: center;
+  margin-top: 12px;
+  font-size: 13px;
+}
+
+.auth-link a {
+  color: #555;
+  text-decoration: underline;
+  cursor: pointer;
+}

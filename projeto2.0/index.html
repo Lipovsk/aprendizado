@@ -4,182 +4,194 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MODA URBANA | Loja de Roupas</title>
+
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
-  <!-- Header -->
-  <header>
-    <div class="logo">MODA<span>URBANA</span></div>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#feminino">Feminino</a></li>
-        <li><a href="#masculino">Masculino</a></li>
-        <li><a href="#acessorios">Acessórios</a></li>
-        <li><a href="#sale">Sale</a></li>
-      </ul>
-    </nav>
 
-    <div class="icons">
-      <span class="search-icon" onclick="openSearch()">
-        <i class="fa-solid fa-magnifying-glass"></i>
-      </span>
+<header>
+  <div class="logo">MODA<span>URBANA</span></div>
 
-      <span class="user-icon" onclick="openAccount()">
-        <i class="fa-regular fa-user"></i>
-      </span>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#feminino">Feminino</a></li>
+      <li><a href="#masculino">Masculino</a></li>
+      <li><a href="#acessorios">Acessórios</a></li>
+      <li><a href="#sale">Sale</a></li>
+    </ul>
+  </nav>
 
-      <span class="cart-icon" onclick="toggleCart()">
-        <i class="fa-solid fa-cart-shopping"></i>
-        <span class="cart-count" id="cartCount">0</span>
-      </span>
-    </div>
-  </header>
+  <div class="icons">
+    <span class="search-icon" onclick="openSearch()">
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </span>
 
-  <!-- Hero Section -->
-  <section class="hero" id="home">
-    <div class="hero-content">
-      <h1>Nova Coleção 2024</h1>
-      <p>Estilo e elegância para todos os momentos</p>
-      <a href="#produtos" class="btn">VER COLEÇÃO</a>
-    </div>
-  </section>
+    <span class="user-icon" onclick="openAccount()">
+      <i class="fa-regular fa-user"></i>
+    </span>
 
-  <!-- Categories -->
-  <section class="categories">
-    <h2 class="section-title">Categorias</h2>
-    <div class="category-grid">
-      <div class="category-card">
-        <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=600" alt="Feminino">
-        <div class="category-overlay">
-          <h3>Feminino</h3>
-          <p>Ver coleção →</p>
-        </div>
-      </div>
-      <div class="category-card">
-        <img src="https://images.unsplash.com/photo-1490578474895-699cd4e2cf59?w=600" alt="Masculino">
-        <div class="category-overlay">
-          <h3>Masculino</h3>
-          <p>Ver coleção →</p>
-        </div>
-      </div>
-      <div class="category-card">
-        <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=600" alt="Acessórios">
-        <div class="category-overlay">
-          <h3>Acessórios</h3>
-          <p>Ver coleção →</p>
-        </div>
+    <span class="cart-icon" onclick="toggleCart()">
+      <i class="fa-solid fa-cart-shopping"></i>
+      <span class="cart-count" id="cartCount">0</span>
+    </span>
+  </div>
+</header>
+
+<section class="hero" id="home">
+  <div class="hero-content">
+    <h1>Nova Coleção 2024</h1>
+    <p>Estilo e elegância para todos os momentos</p>
+    <a href="#produtos" class="btn">VER COLEÇÃO</a>
+  </div>
+</section>
+
+<section class="categories">
+  <h2 class="section-title">Categorias</h2>
+
+  <div class="category-grid">
+    <div class="category-card">
+      <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=600" alt="Feminino">
+      <div class="category-overlay">
+        <h3>Feminino</h3>
+        <p>Ver coleção →</p>
       </div>
     </div>
-  </section>
 
-  <!-- Products -->
-  <section class="products" id="produtos">
+    <div class="category-card">
+      <img src="https://images.unsplash.com/photo-1490578474895-699cd4e2cf59?w=600" alt="Masculino">
+      <div class="category-overlay">
+        <h3>Masculino</h3>
+        <p>Ver coleção →</p>
+      </div>
+    </div>
+
+    <div class="category-card">
+      <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=600" alt="Acessórios">
+      <div class="category-overlay">
+        <h3>Acessórios</h3>
+        <p>Ver coleção →</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="products" id="produtos">
   <h2 class="section-title">Produtos em Destaque</h2>
   <div class="product-grid" id="productGrid"></div>
 </section>
 
-  <!-- Features -->
-  <section class="features">
-    <div class="feature">
-      <div>🚚</div>
-      <h3>Frete Grátis</h3>
-      <p>Em compras acima de R$ 300</p>
-    </div>
-    <div class="feature">
-      <div>↩️</div>
-      <h3>Troca Fácil</h3>
-      <p>30 dias para trocar</p>
-    </div>
-    <div class="feature">
-      <div>🔒</div>
-      <h3>Pagamento Seguro</h3>
-      <p>100% protegido</p>
-    </div>
-    <div class="feature">
-      <div>🎧</div>
-      <h3>Suporte 24/7</h3>
-      <p>Atendimento especializado</p>
-    </div>
-  </section>
+<section class="features">
+  <div class="feature">
+    <div>🚚</div>
+    <h3>Frete Grátis</h3>
+    <p>Em compras acima de R$ 300</p>
+  </div>
 
-  <!-- Newsletter -->
-  <section class="newsletter">
-    <h2>Receba Novidades</h2>
-    <p>Cadastre-se e ganhe 10% OFF na primeira compra</p>
-    <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Obrigado por se cadastrar!')">
-      <input type="email" placeholder="Seu melhor e-mail" required>
-      <button type="submit">CADASTRAR</button>
-    </form>
-  </section>
+  <div class="feature">
+    <div>↩️</div>
+    <h3>Troca Fácil</h3>
+    <p>30 dias para trocar</p>
+  </div>
 
-  <!-- Footer -->
-  <footer>
-    <div class="footer-grid">
-      <div class="footer-col">
-        <h4>SOBRE NÓS</h4>
-        <p style="color: #999; line-height: 1.6;">Moda Urbana é uma loja de roupas premium focada em estilo, qualidade e atendimento excepcional.</p>
-        <div class="social-links">
-          <a href="#">f</a>
-          <a href="#">in</a>
-          <a href="#">ig</a>
-        </div>
-      </div>
-      <div class="footer-col">
-        <h4>CATEGORIAS</h4>
-        <ul>
-          <li><a href="#">Feminino</a></li>
-          <li><a href="#">Masculino</a></li>
-          <li><a href="#">Acessórios</a></li>
-          <li><a href="#">Sale</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>AJUDA</h4>
-        <ul>
-          <li><a href="#">Rastrear Pedido</a></li>
-          <li><a href="#">Trocas e Devoluções</a></li>
-          <li><a href="#">Guia de Tamanhos</a></li>
-          <li><a href="#">FAQ</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>CONTATO</h4>
-        <ul>
-          <li>contato@modaurbana.com</li>
-          <li>(11) 99999-9999</li>
-          <li>São Paulo, SP</li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2024 Moda Urbana. Todos os direitos reservados.</p>
-    </div>
-  </footer>
+  <div class="feature">
+    <div>🔒</div>
+    <h3>Pagamento Seguro</h3>
+    <p>100% protegido</p>
+  </div>
 
-  <!-- Cart Sidebar -->
-  <div class="overlay" id="overlay" onclick="toggleCart()"></div>
-  <div class="cart-sidebar" id="cartSidebar">
-    <div class="cart-header">
-      <h3>Seu Carrinho</h3>
-      <button class="close-cart" onclick="toggleCart()">×</button>
-    </div>
-    <div class="cart-items" id="cartItems">
-      <p style="text-align: center; color: #999; margin-top: 2rem;">Seu carrinho está vazio</p>
-    </div>
-    <div class="cart-footer">
-      <div class="cart-total">
-        <span>Total:</span>
-        <span id="cartTotal">R$ 0,00</span>
+  <div class="feature">
+    <div>🎧</div>
+    <h3>Suporte 24/7</h3>
+    <p>Atendimento especializado</p>
+  </div>
+</section>
+
+<section class="newsletter">
+  <h2>Receba Novidades</h2>
+  <p>Cadastre-se e ganhe 10% OFF na primeira compra</p>
+
+  <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Obrigado por se cadastrar!')">
+    <input type="email" placeholder="Seu melhor e-mail" required>
+    <button type="submit">CADASTRAR</button>
+  </form>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-col">
+      <h4>SOBRE NÓS</h4>
+      <p style="color: #999; line-height: 1.6;">
+        Moda Urbana é uma loja de roupas premium focada em estilo, qualidade e atendimento excepcional.
+      </p>
+
+      <div class="social-links">
+        <a href="#">f</a>
+        <a href="#">in</a>
+        <a href="#">ig</a>
       </div>
-      <button class="checkout-btn">FINALIZAR COMPRA</button>
+    </div>
+
+    <div class="footer-col">
+      <h4>CATEGORIAS</h4>
+      <ul>
+        <li><a href="#">Feminino</a></li>
+        <li><a href="#">Masculino</a></li>
+        <li><a href="#">Acessórios</a></li>
+        <li><a href="#">Sale</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>AJUDA</h4>
+      <ul>
+        <li><a href="#">Rastrear Pedido</a></li>
+        <li><a href="#">Trocas e Devoluções</a></li>
+        <li><a href="#">Guia de Tamanhos</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>CONTATO</h4>
+      <ul>
+        <li>contato@modaurbana.com</li>
+        <li>(11) 99999-9999</li>
+        <li>São Paulo, SP</li>
+      </ul>
     </div>
   </div>
 
-  <!-- Search Modal -->
+  <div class="footer-bottom">
+    <p>&copy; 2024 Moda Urbana. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<div class="overlay" id="overlay" onclick="toggleCart()"></div>
+
+<div class="cart-sidebar" id="cartSidebar">
+  <div class="cart-header">
+    <h3>Seu Carrinho</h3>
+    <button class="close-cart" onclick="toggleCart()">×</button>
+  </div>
+
+  <div class="cart-items" id="cartItems">
+    <p style="text-align: center; color: #999; margin-top: 2rem;">Seu carrinho está vazio</p>
+  </div>
+
+  <div class="cart-footer">
+    <div class="cart-total">
+      <span>Total:</span>
+      <span id="cartTotal">R$ 0,00</span>
+    </div>
+
+    <button class="checkout-btn">FINALIZAR COMPRA</button>
+  </div>
+</div>
+
 <div id="searchOverlay" class="search-overlay" onclick="closeSearch()"></div>
 
 <div id="searchModal" class="search-modal">
@@ -199,40 +211,56 @@
   </p>
 </div>
 
-<!-- OVERLAY -->
 <div id="accountOverlay" class="account-overlay" onclick="closeAccount()"></div>
 
-<!-- MODAL CONTA -->
 <div id="accountModal" class="account-modal">
-
   <div class="account-header">
     <h2>Minha Conta</h2>
     <button onclick="closeAccount()">×</button>
   </div>
 
-  <div class="account-tabs">
+  <div class="account-tabs" id="accountTabs">
     <button class="tab active" onclick="showLogin()">Entrar</button>
     <button class="tab" onclick="showRegister()">Cadastrar</button>
   </div>
 
-  <!-- LOGIN -->
   <div id="loginForm" class="account-form active">
-    <input type="email" placeholder="Email">
+    <input type="email" placeholder="E-mail">
     <input type="password" placeholder="Senha">
-    <button class="account-btn">Entrar</button>
+
+    <div id="loginMsg" class="auth-msg" style="display:none"></div>
+
+    <button class="account-btn" onclick="handleLogin()">Entrar</button>
+
+    <p class="auth-link">
+      <a href="#" onclick="event.preventDefault(); requestPasswordReset()">Esqueci minha senha</a>
+    </p>
   </div>
 
-  <!-- CADASTRO -->
   <div id="registerForm" class="account-form">
     <input type="text" placeholder="Nome completo">
-    <input type="email" placeholder="Email">
-    <input type="password" placeholder="Senha">
-    <button class="account-btn">Criar conta</button>
+    <input type="email" placeholder="E-mail">
+    <input type="password" placeholder="Senha (mínimo 8 caracteres)">
+
+    <div id="registerMsg" class="auth-msg" style="display:none"></div>
+
+    <button class="account-btn" onclick="handleRegister()">Criar conta</button>
   </div>
 
+  <div id="userPanel" class="account-form" style="display:none; text-align:center; padding: 1rem 0;">
+    <div style="font-size: 3rem; margin-bottom: 0.5rem;">👤</div>
+
+    <p id="userGreeting" style="font-weight: 600; font-size: 1rem; margin-bottom: 0.25rem;"></p>
+    <p id="userEmail" style="color: #999; font-size: 0.85rem; margin-bottom: 1.5rem;"></p>
+
+    <button class="account-btn" onclick="handleLogout()" style="background: #f1f1f1; color: #333; border: 1px solid #ddd;">
+      Sair da conta
+    </button>
+  </div>
 </div>
 
-   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-  <script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="script.js"></script>
+
 </body>
 </html>
